@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PipeSpawnerScript : MonoBehaviour
 {
-    // https://www.youtube.com/watch?v=XtQMytORBmM - 25:00
     public GameObject pipe;
-    public float spawnRate = 2;
+    public float spawnRate = 1.5f;
     private float timer = 0;
-    public float heightOffset = 10;
+    public float heightOffset = 3.0f;
 
     // Start is called before the first frame update
     void Start()
