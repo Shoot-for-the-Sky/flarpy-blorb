@@ -3,6 +3,7 @@ Temp/*
 UserSettings/*
 Logs/*
 Execute/*
+Edits/*
 *.sln
 *.csproj
 *.userprefs
