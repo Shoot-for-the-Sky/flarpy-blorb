@@ -11,10 +11,19 @@ public class LogicManager : MonoBehaviour
     public GameObject gameOverScreen;
 
     [ContextMenu("Increase Score")]
-    public void addScore(int scoreToAdd) 
+    public void addScore(int scoreToAdd)
     {
+        int level = SceneManager.GetActiveScene().buildIndex;
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
+        if (playerScore >= 5 && level == 0)
+        {
+            SceneManager.LoadScene(1);
+        }
+        else if (playerScore > 5 && level == 1)
+        {
+            SceneManager.LoadScene("level3");
+        }
     }
 
     public void restartGame()
